@@ -6,10 +6,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ApplicationConfig {
 
-    @Value("${domain}") private String domain;
-    @Value("${email}") private String email;
-    @Value("${user}") private String user;
-    @Value("${theme}") private String theme;
+    @Value("${domain}")
+    private String domain;
+    @Value("${email}")
+    private String email;
+    @Value("${user}")
+    private String user;
+    @Value("${theme}")
+    private String theme;
 
     public ApplicationConfigDto asDto() {
         return new ApplicationConfigDto()
